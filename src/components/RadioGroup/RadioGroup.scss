@@ -1,0 +1,58 @@
+@import '../../scss/variables';
+@import '../../scss/colors';
+
+input[type='radio'] {
+  width: 24rem;
+  height: 1.8rem;
+  -webkit-appearance: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.radio {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  &__checkmark {
+    position: relative;
+    background: $light-grey;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 300ms;
+
+    &:hover {
+      background: $primary-color;
+    }
+
+    &--checked {
+      background: $primary-color;
+    }
+  }
+
+  &__checkmark-dot {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: $white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    visibility: hidden;
+
+    &--checked {
+      visibility: visible;
+    }
+  }
+
+  &__label {
+    font-size: 2rem;
+
+    @media screen and (max-width: $medium-screen) {
+      font-size: 1.5rem;
+    }
+  }
+}
