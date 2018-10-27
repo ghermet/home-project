@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+@import '../../scss/colors';
+
+.progress-bar {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    justify-self: stretch;
+    width: 100%;
+    background-color: $light-blue;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+
+    @media screen and (min-width: $medium-screen) {
+      width: 60%;
+    }
+  }
+
+  &__progress {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    transition: 500ms ease-in-out;
+    background-color: $primary-color;
+  }
+}
