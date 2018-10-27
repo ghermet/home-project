@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Exo';
+  src: (url('./assets/fonts/Exo2-Bold.otf') format('otf'),);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Exo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, select {
+  outline: none;
+}
