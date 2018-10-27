@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $medium-screen) {
+    align-self: stretch;
+  }
+}
