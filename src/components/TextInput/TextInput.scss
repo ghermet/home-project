@@ -1,0 +1,41 @@
+@import '../../scss/variables';
+@import '../../scss/colors';
+
+.input {
+  flex-basis: 100%;
+
+  .error, .error:focus {
+    border: 1px solid $red;
+  }
+
+  &__label {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: flex;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+  }
+
+  &__text {
+    flex-basis: 100%;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.3rem;
+    background-color: $white;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid $white;
+    box-shadow: 0 5px 26px $box-shadow;
+    transition: 300ms;
+
+    &:focus {
+      border: 1px solid $primary-color;
+    }
+  }
+
+  &__error-message {
+    font-size: 1rem;
+    color: $red;
+    line-height: 1.5;
+  }
+}
