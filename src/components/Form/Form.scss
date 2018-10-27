@@ -1,0 +1,17 @@
+@import '../../scss/variables';
+
+.form {
+  width: 100%;
+
+  @media screen and (max-width: $medium-screen) {}
+
+  &__submit-button-wrapper {
+    height: 4rem;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $medium-screen) {
+      align-items: stretch;
+    }
+  }
+}
