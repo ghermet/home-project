@@ -17,7 +17,7 @@ const Row = ({ className, style, children, ...rest }) => (
 Row.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   className: PropTypes.string,
-  style: PropTypes.string,
+  style: PropTypes.object,
 };
 
 Row.defaultProps = {
